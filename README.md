@@ -1,1 +1,1 @@
-# sensu-plugins-memory-checks
+# sensu-plugins-resource-checks
