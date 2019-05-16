@@ -1,4 +1,4 @@
-HDD=`df -lh | awk '{if ($6 == "/") { print $5 }}' | head -1 | cut -d'%' -f1`
+HDD=$(df -lh | awk '{if ($6 == "/") { print $5 }}' | head -1 | cut -d'%' -f1)
 WARN=0
 if [ $(echo "$HDD > 90" |bc -l) -gt 0 ]; then
     echo "HDD usage is over 90%: ${HDD}%"
